@@ -1,0 +1,7 @@
+Author: Ashley K. Smith
+Solution to Accelerated C++, Chapter00, exercise 0-1
+
+This statement is an expression that yields a result of 7, but has no side effect
+on the program. It's possible to output the result of the expression by:
+
+	std::cout << 3 + 4;
