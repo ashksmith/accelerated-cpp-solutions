@@ -1,0 +1,8 @@
+Author: Ashley K. Smith
+Solution to Accelerated C++, exercise 0-6
+Is this a valid program? Why or why not?
+
+#include<iostream>
+int main() {{{{{std::cout << "Hello World!" << std::endl;}}}}}
+
+The program is valid. Nested blocks are fine aslong as the opening and closing brackets are balanced.
