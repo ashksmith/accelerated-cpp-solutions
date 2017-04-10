@@ -1,0 +1,8 @@
+Author: Ashley K. Smith
+Solution to Accelerated C++, exercise 0-5
+Is this a valid program? Why or why not?
+
+#include<iostream>
+int main() std::cout << "Hello World!" << std::endl;
+
+This program is not valid, it is missing the required curly block braces.
