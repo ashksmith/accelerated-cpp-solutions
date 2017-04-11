@@ -1,0 +1,5 @@
+Author: Ashley K. Smith
+Solution to Accelerated C++, exercise 0-8
+
+Yes - anything subsequent text after // is considered a comment, including the 
+multiline comment delimiter. 
