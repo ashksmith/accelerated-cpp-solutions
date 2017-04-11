@@ -1,0 +1,6 @@
+Author: Ashley K. Smith
+Solution to Accelerated C++, exercise 0-7
+
+No - A correct comment block ends, and begins with a /* and a closing */, anything
+outside is not considered a comment by the compiler. In this case the comment
+ends at the first */. Everything after is not considered a comment
