@@ -1,0 +1,10 @@
+Author: Ashley K. Smith
+Accelerated C++, Chapter 1, Exercise 1-2
+
+Are the following definitions valid? Why or why not?
+
+	const std::string exclaim = "!";
+	const std::string message = "Hello" + ", world" + exclaim;
+
+Unlike the previous question, this defintions is attempting to concat to string literals
+
