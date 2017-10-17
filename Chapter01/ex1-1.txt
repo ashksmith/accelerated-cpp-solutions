@@ -3,11 +3,12 @@ Accelerated C++, Chapter 1, Exercise 1-1
 
 Are the following definitions valid? Why or why not?
 
-   const std::string hello = "Hello";
-   const std::string message = hello + ", world" + "!";
+	const std::string hello = "Hello";
+	const std::string message = hello + ", world" + "!";
 
-The definitions of hello is valid. The definitions of message is invalid because of the
-illegal attempt to concat two string literals.
+Both definitions ar valid. At first thought it's easy to see that the definition of 
+message has an illegal concatenation of two string literals. Because the string operatorconcat operator is left associative, the definition is the same as:
 
+	cosnt std::string message = (hello + ", world") + "!";
 
-
+Which is legal, as the result of hello + ", world" is a string object, not a literal
