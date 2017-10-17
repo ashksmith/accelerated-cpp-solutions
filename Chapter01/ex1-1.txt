@@ -1,0 +1,13 @@
+Author: Ashley K. Smith
+Accelerated C++, Chapter 1, Exercise 1-1
+
+Are the following definitions valid? Why or why not?
+
+   const std::string hello = "Hello";
+   const std::string message = hello + ", world" + "!";
+
+The definitions of hello is valid. The definitions of message is invalid because of the
+illegal attempt to concat two string literals.
+
+
+
