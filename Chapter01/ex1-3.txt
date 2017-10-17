@@ -1,0 +1,24 @@
+Author: Ashley K. Smith
+Accelerated C++, Chapter 1, Exercise 1-3
+
+Is the following program valid? If so, what does it do? If not, why not?
+
+#include <iostream>
+#include <string>
+
+int main(){
+	{ const std::string s = "A string";
+	  std::cout << s << std::endl ; }
+
+	{ const std::string s = "Another string";
+	  std::cout << s << std::endl; }
+
+	return 0;
+}
+
+Each instance of s is in a local block, all strings are defined properly.
+
+The output of the program is 
+
+	A string
+	Another string
