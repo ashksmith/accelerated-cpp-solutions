@@ -1,0 +1,23 @@
+Author: Ashley K. Smith
+Accelerated C++, Chapter 1, Exercise 1-4
+
+What about this one? What if we change }} ti };} in the third line from the end?
+
+#include <iostream>
+#include <string>
+
+int main(){
+	{ const std::string s = "A string";
+	  std::cout << s << std::endl; 
+
+	{ const std::string s = "Another string";
+	  std::cout << s << std::endl; }}
+
+	return 0;
+}
+
+In this example, rather than two individual block it now shows a nested block. Both
+blocks are still valid and outputs
+
+	A string
+	Another string
