@@ -1,0 +1,34 @@
+Accelerated C++, Chapter 1, Exercise 1-6
+
+What does the following program do if, when it asks for input, you have two names?
+For example, Samuel Beckett.
+
+#include <iostream>
+#include <string>
+
+int main(void){
+	std::cout << "What is your name? ";
+	std::string name;
+	std::cin >> name;
+	std::cout << "Hello, " << name << std::endl << "And what is yours? ";
+	std::cin >> name;
+	std::cout << "Hello, " << name << "; nice to meet your too!" << std::endl;
+
+	return 0;
+}
+
+Because cin >> will read up until the first white character it will stop after entering the first name. The program will work fine, but I believe the second name will be lost.
+
+In reality what happens; I enter "Ashley Smith" into the first prompt, my entire name
+is stored into the cin buffer. The assignment flushes my first name into the  name variable, leaving
+behind "Smith" in the cin buffer. When it comes to taking input again, it finds Smith in the buffer and 
+flushes into the name variable again. 
+
+The ouput is 
+
+What is your name?
+Ashley Smith
+Hello, Ashley
+And what is yours?
+Smith; nice to meet you too!
+
